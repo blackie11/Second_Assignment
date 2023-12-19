@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 12px;
+  font-family: "poppins", sans-serif;
+  color: #737373;
+  padding-top: 15px;
+  text-align: center;
+}
+
+/* anchor for links, remenber hover and active state */
+a {
+  text-decoration: none;
+  color: #2ec4b6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover,
+:active {
+  color: #2ec4b5b4;
+  text-decoration: underline;
+}
+
+body {
+  background-color: rgba(46, 194, 179, 0.209);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(15px, 4vw, 20%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #2ec4b6;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+/* button to have outline on hover and active */
+
+button:hover {
+  border: 1px solid #24d1c0d2;
+  background-color: white;
+  color: #2ec4b6;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.836);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+select {
+  /* display: block; */
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 8px;
+  border: 1px solid#ccc;
+  border-radius: 5px;
+  color: #737373;
+}
+
+.form {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0.5px 0px 20px 0px #73737374;
+  margin-bottom: 1.25rem;
+}
+
+.hero_para {
+  max-width: 500px;
+  color: #737373;
+  font-family: "poppins", sans-serif;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+section {
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.password-icon {
+  /* position absolute  */
+  position: absolute;
+  background-color: greenyellow;
+  z-index: 99;
+}
+
+/* media querry for laptop break point using min-width */
+@media screen and (min-width: 33em) {
+  body {
+    height: fit-content;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+  }
+
+  /* display flex to change input direction */
+
+  .flex-contrl {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    /* border: 1px solid green; */
+  }
+
+  .name {
+    width: 50%;
+  }
+
+  /* add margin-top to the hero-heading section  */
+  .hero_heading {
+    margin-top: 5rem;
+    /* border: 1px solid red; */
+  }
+
+  /* increase logo container size */
+  .logo {
+    width: 60px;
+  }
+
+  .hero_para {
+    padding-inline-end: 1rem;
+  }
+}

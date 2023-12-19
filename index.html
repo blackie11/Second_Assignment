@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author " content="Ahiakwo Great" />
+        <meta name="description " content="assignment" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/ea37165598.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Sign up page</title>
+    </head>
+    <body>
+        <main class="container">
+            <section class="hero_heading">
+                <div class="logo">
+                    <img src="./Logo.png" alt="Logo" />
+                </div>
+                <h1 class="hero_tittle">For individuals</h1>
+                <p class="hero_para">
+                    Start benefiting from the wellness experience. For companies
+                    looking on increasing productivity, and improving
+                    organization wellness.
+                </p>
+            </section>
+            <form action="" method="get" class="form">
+                <div class="flex-contrl">
+                    <div class="name">
+                        <label for="firstname">First Name</label>
+                        <br />
+                        <input
+                            type="text"
+                            name=" firstname"
+                            id=" firstname"
+                            required
+                            placeholder="Great"
+                        />
+                    </div>
+                    <div class="name">
+                        <label for="lastname">Last Name</label>
+                        <br />
+                        <input
+                            type="text"
+                            name=" lastname"
+                            id=" lastname"
+                            placeholder="clement"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="flex-contrl">
+                    <div class="name">
+                        <label for="gender">Gender</label><br />
+                        <select name="gender" id=" gender">
+                            <option value="choice">Select here</option>
+                            <option value=" ml">Male</option>
+                            <option value=" fl">Female</option>
+                        </select>
+                    </div>
+                    <div class="name">
+                        <label for="DoB">Date of Birth</label><br />
+                        <input
+                            type="date"
+                            name="DoB"
+                            id=" dob"
+                            placeholder="Select here"
+                        />
+                    </div>
+                </div>
+
+                <div class="flex-contrl">
+                    <div class="name">
+                        <label for="weight">Weight(KG)</label><br />
+                        <input
+                            type="text"
+                            name="weight"
+                            id="weight"
+                            placeholder="Enter Weight"
+                        />
+                    </div>
+                    <div class="name">
+                        <label for="Height">Height(CM)</label><br />
+                        <input
+                            type="text"
+                            name="height"
+                            id="height"
+                            placeholder="Enter height here"
+                        />
+                    </div>
+                </div>
+
+                <label for="activity"> Activity Level </label><br />
+                <select name="activity" id=" activity" class="act_level">
+                    <option value="choice">Select here</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+
+                <label for="password">Password</label>
+                <br />
+                <div class="position-re">
+                    <input type="password" name="password" id=" passcode" />
+                    <i class="fas fa-eye password-icon"></i>
+                </div>
+
+                <button type="submit" class="registerBtn">Register</button>
+
+                <p class="terms">
+                    By clicking Register, you agree to our
+                    <a href="#">Terms of Use</a> and our
+                    <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
